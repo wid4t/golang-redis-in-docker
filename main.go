@@ -15,7 +15,7 @@ var ctx = context.Background()
 
 func initRedis() {
 	rdb = redis.NewClient(&redis.Options{
-		Addr: "redis.server.svc.cluster.local:6379",
+		Addr: "redis-service.server.svc.cluster.local:6379",
 		DB:   0,
 	})
 
